@@ -1,0 +1,32 @@
+.features-container {
+  background-color: var(--white-bg-color);
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-title {
+  margin-bottom: 8px;
+}
+
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.features-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.features-icon-container {
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  background-color: var(--light-color);
+  border: 1px solid var(--subtitle-color);
+  border-radius: 4px;
+}
