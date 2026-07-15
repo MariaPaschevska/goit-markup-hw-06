@@ -168,7 +168,7 @@
 
 @media screen and (min-width: 1440px) {
   .footer-container {
-    padding: 100px 141px;
+    padding: 100px 0;
   }
 
   .footer-content {
