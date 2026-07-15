@@ -14,11 +14,12 @@
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .team-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
   background-color: var(--white-bg-color);
   border-radius: 0 0 4px 4px;
   overflow: hidden;
@@ -26,6 +27,37 @@
     0px 2px 1px 0px #2e2f4214,
     0px 1px 1px 0px #2e2f4229,
     0px 1px 6px 0px #2e2f4214;
+}
+
+.team-item img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
 
 .team-member-name {

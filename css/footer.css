@@ -1,18 +1,19 @@
 .footer-container {
   color: var(--light-color);
   background-color: var(--dark-color);
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 .footer-content {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 
 .footer-slogan {
   width: 264px;
-  margin-right: 120px;
+  text-align: center;
 }
 
 .footer-text {
@@ -25,7 +26,7 @@
 .footer-social-media {
   display: flex;
   flex-direction: column;
-  margin-right: 83px;
+  align-items: center;
 }
 
 .footer-social-media .social-list {
@@ -54,6 +55,8 @@
 .footer-subscribe {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .subscribe-button {
@@ -67,7 +70,6 @@
   background-color: var(--primary-brand-color);
   border: none;
   border-radius: 4px;
-  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -89,12 +91,14 @@
 
 .subscribe-form {
   display: flex;
-  align-items: flex-start;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
 }
 
 .subscribe-input {
-  width: 264px;
+  width: 100%;
   height: 40px;
 
   padding-left: 16px;
@@ -122,4 +126,74 @@
 
 .subscribe-input:focus {
   border-color: var(--success-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 72px;
+    column-gap: 24px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .footer-slogan {
+    text-align: left;
+  }
+
+  .footer-social-media {
+    align-items: flex-start;
+  }
+
+  .footer-subscribe {
+    align-items: flex-start;
+    flex-basis: 100%;
+    width: auto;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    width: auto;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-container {
+    padding: 100px 141px;
+  }
+
+  .footer-content {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    column-gap: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-slogan {
+    margin-right: 120px;
+  }
+
+  .footer-social-media {
+    align-items: flex-start;
+    margin-right: 83px;
+  }
+
+  .footer-subscribe {
+    flex-basis: auto;
+    align-items: flex-start;
+  }
+
+  .subscribe-form {
+    align-items: flex-start;
+  }
 }
