@@ -13,7 +13,7 @@
 
 .footer-slogan {
   width: 264px;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-text {
@@ -148,6 +148,10 @@
     align-items: flex-start;
   }
 
+  .footer-social-media .social-list {
+    justify-content: flex-start;
+  }
+
   .footer-subscribe {
     align-items: flex-start;
     flex-basis: 100%;
@@ -166,7 +170,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .footer-container {
     padding: 100px 0;
   }

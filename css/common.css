@@ -113,7 +113,7 @@ input {
 }
 
 /* desktop  */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -124,7 +124,7 @@ input {
   padding: 96px 0;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .section {
     padding: 120px 0;
   }

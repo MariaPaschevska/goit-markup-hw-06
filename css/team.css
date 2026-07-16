@@ -19,7 +19,8 @@
 }
 
 .team-item {
-  width: 100%;
+  width: 264px;
+  margin: 0 auto;
   background-color: var(--white-bg-color);
   border-radius: 0 0 4px 4px;
   overflow: hidden;
@@ -37,17 +38,18 @@
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 72px 24px;
+    gap: 64px 24px;
     padding-left: 92px;
     padding-right: 92px;
   }
 
   .team-item {
     width: calc((100% - 24px) / 2);
+    margin: 0;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .team-list {
     flex-wrap: nowrap;
     gap: 24px;
