@@ -120,12 +120,17 @@
   color: var(--primary-brand-color);
 }
 
+.mobile-menu-address-link[href^="mailto:"] {
+  color: var(--text-color);
+}
+
 .mobile-menu-social {
   margin-top: 48px;
 }
 
 .mobile-menu-social .social-list {
   justify-content: flex-start;
+  gap: 40px;
 }
 
 @media screen and (min-width: 768px) {

@@ -75,4 +75,8 @@
   .hero-container {
     padding: 188px 0;
   }
+
+  .hero-button {
+    margin-top: 48px;
+  }
 }
